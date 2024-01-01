@@ -1,0 +1,28 @@
+﻿@model Labfinal213052.Models.appointment
+
+@{
+    ViewData["Title"] = "appedit";
+}
+
+<h1>appedit</h1>
+
+<h4>appointment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="appedit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

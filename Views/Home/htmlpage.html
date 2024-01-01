@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    @model List<Patient>
+
+        <h1>List of Patients</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                
+            </tr>
+            @foreach (var patient in Model)
+            {
+            <tr>
+                <td>@patient.ID</td>
+                <td>@patienT.address</td>
+                <td>@patient.Name</td>
+
+            </tr>
+            }
+        </table>
+
+</body>
+</html>
